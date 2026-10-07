@@ -13,29 +13,29 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Karla:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style/style.css" />
   </head>
   <body>
     <header class="nav">
-      <a class="logo" href="index.html">
+      <a class="logo" href="monstad.html">
         <span>✦</span>
         <div>
-          <b>Teyvat Travel Agency</b>
-          <small>Landing Page</small>
+          <b>Celestia Passage </b>
+          <small>Teyvat Travel Agency</small>
         </div>
       </a>
       <nav>
-        <a href="index.html">Mondstadt</a>
+        <a href="monstad.html">Mondstadt</a>
         <a href="liyue.html" class="on">Liyue</a>
         <a href="inazuma.html">Inazuma</a>
         <a href="sumeru.html">Sumeru</a>
         <a href="fontaine.html">Fontaine</a>
         <a href="natlan.html">Natlan</a>
         <a href="snezhnaya.html">Snezhnaya</a>
-        <a href="director.html" class="cta">Director</a>
+        <a href="../index.html" class="cta">prologue</a>
       </nav>
     </header>
-    <section class="hero" style="background-image: url(images/liyue.png)">
+    <section class="hero" style="background-image: url(../images/liyue.png)">
       <div class="shade"></div>
       <div class="hero-in">
         <p class="eyebrow">Chapter 02 · Geo · The Harbor of Contracts</p>
@@ -46,7 +46,7 @@
           Follow lantern-lit trade roads from the harbor to cloud-piercing peaks, hidden valleys,
           and the depths of an ancient chasm.
         </p>
-        <a class="btn" href="#districts">Explore the districts</a>
+        <a class="btn" href="#districts" id="Districts">Explore the districts</a>
       </div>
     </section>
     <section class="districts" id="districts">
@@ -80,7 +80,7 @@
           <span>06</span>
           The Chasm
         </li>
-        <li>
+        <li id="package">
           <span>07</span>
           Chenyu Vale
         </li>
@@ -90,7 +90,7 @@
       <div class="side">
         <p class="eyebrow">Tour Package · LIYU-02</p>
         <h2>The Harbor of Stone and Commerce</h2>
-        <p>
+        <p class="desc">
           A bustling port city tour blending breathtaking mountain ranges, ancient folklore, and
           world-class culinary adventures. Watch lantern-lit markets open at dawn, browse trinkets
           from every nation along the harbor, and hear tales of the adepti over steaming dim sum.
@@ -119,15 +119,58 @@
           </div>
         </div>
       </div>
-        <a class="inquire-btn" href="inquire.html?tag=LIYU-02">Inquire about this package &rarr;</a>
+        <a class="inquire-btn" href="#ordered">Inquire about this package &rarr;</a>
+        <div class="order-overlay" id="ordered">
+          <a class="order-bg" href="#" aria-label="Close"></a>
+          <div class="order-box">
+            <p class="eyebrow">Order received</p>
+            <h3>Thank you!</h3>
+            <p>You ordered <b>The Harbor of Contracts Expedition</b>.<br>Please wait for our follow-up.</p>
+            <a class="btn" href="#">Close</a>
+          </div>
+        </div>
     </section>
-    <a class="next" href="inazuma.html">
-      <small>Next chapter · 03</small>
-      <strong>Inazuma →</strong>
-    </a>
-    <footer class="foot">
-      <p class="logo-t">Teyvat Travel Agency</p>
-      <p></p>
+    <div class="pager">
+      <a class="prev" href="monstad.html">
+        <small>← previous</small>
+        <strong>Mondstadt </strong>
+      </a>
+      <a class="next" href="inazuma.html">
+        <small>next →</small>
+        <strong>Inazuma </strong>
+      </a>
+    </div>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <span class="footer-brand-name">Copyright Notice</span>
+            </div>
+            <p class="footer-desc">This material is provided strictly for educational, informational, and research purposes. All trademarks, logos, and brand names belong to their respective owners.</p>
+          </div>
+          <div class="footer-col">
+            <h3 class="mono-label eyebrow-gold">Contact Us</h3>
+            <div class="footer-links">
+              <a href="#Email">Email: Celestiapassage@testing.com</a>
+              <a href="#Contact">Contact No: +69 1234 5678</a>
+              <a href="#Address">Address: 123 Celestia Passage, Mondstadt</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3 class="mono-label eyebrow-gold">Keep wandering</h3>
+            <div class="footer-links">
+              <a href="#top">Back to top</a>
+              <a href="#package">Tour Package</a>
+              <a href="#Districts">District Notes</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 / A fan-made tribute to Teyvat</span>
+          <span>Built for school purposes only</span>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

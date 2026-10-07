@@ -13,29 +13,29 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Karla:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style/style.css" />
   </head>
   <body>
     <header class="nav">
-      <a class="logo" href="index.html">
+      <a class="logo" href="monstad.html">
         <span>✦</span>
         <div>
-          <b>Teyvat Travel Agency</b>
-          <small>Landing Page</small>
+          <b>Celestia Passage </b>
+          <small>Teyvat Travel Agency</small>
         </div>
       </a>
       <nav>
-        <a href="index.html">Mondstadt</a>
+        <a href="monstad.html">Mondstadt</a>
         <a href="liyue.html">Liyue</a>
         <a href="inazuma.html" class="on">Inazuma</a>
         <a href="sumeru.html">Sumeru</a>
         <a href="fontaine.html">Fontaine</a>
         <a href="natlan.html">Natlan</a>
         <a href="snezhnaya.html">Snezhnaya</a>
-        <a href="director.html" class="cta">Director</a>
+        <a href="../index.html" class="cta">prologue</a>
       </nav>
     </header>
-    <section class="hero" style="background-image: url(images/inazuma.jpg)">
+    <section class="hero" style="background-image: url(../images/inazuma.jpg)">
       <div class="shade"></div>
       <div class="hero-in">
         <p class="eyebrow">Chapter 03 · Electro · The Islands of Eternity</p>
@@ -46,7 +46,7 @@
           Sail between sacred shrines, storm-scarred shores, coral palaces, and islands where memory
           still hangs in the mist.
         </p>
-        <a class="btn" href="#districts">Explore the districts</a>
+        <a class="btn" href="#districts" id="Districts">Explore the districts</a>
       </div>
     </section>
     <section class="districts" id="districts">
@@ -80,7 +80,7 @@
           <span>06</span>
           Tsurumi Island
         </li>
-        <li>
+        <li id="package">
           <span>07</span>
           Enkanomiya
         </li>
@@ -90,7 +90,7 @@
       <div class="side">
         <p class="eyebrow">Tour Package · INAZ-03</p>
         <h2>The Realm of Eternal Thunder</h2>
-        <p>
+        <p class="desc">
           Discover a culturally rich archipelago featuring striking purple foliage, traditional
           shrines, and serene coastal views. Sail between sacred islands past vermilion torii
           gates, join a mask-painting workshop with local artisans, and sample sakura mochi and
@@ -119,15 +119,58 @@
           </div>
         </div>
       </div>
-        <a class="inquire-btn" href="inquire.html?tag=INAZ-03">Inquire about this package &rarr;</a>
+        <a class="inquire-btn" href="#ordered">Inquire about this package &rarr;</a>
+        <div class="order-overlay" id="ordered">
+          <a class="order-bg" href="#" aria-label="Close"></a>
+          <div class="order-box">
+            <p class="eyebrow">Order received</p>
+            <h3>Thank you!</h3>
+            <p>You ordered <b>The Island of Eternity Expedition</b>.<br>Please wait for our follow-up.</p>
+            <a class="btn" href="#">Close</a>
+          </div>
+        </div>
     </section>
-    <a class="next" href="sumeru.html">
-      <small>Next chapter · 04</small>
-      <strong>Sumeru →</strong>
-    </a>
-    <footer class="foot">
-      <p class="logo-t">Teyvat Travel Agency</p>
-      <p></p>
+    <div class="pager">
+      <a class="prev" href="liyue.html">
+        <small>← previous</small>
+        <strong>Liyue </strong>
+      </a>
+      <a class="next" href="sumeru.html">
+        <small>next →</small>
+        <strong>Sumeru </strong>
+      </a>
+    </div>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <span class="footer-brand-name">Copyright Notice</span>
+            </div>
+            <p class="footer-desc">This material is provided strictly for educational, informational, and research purposes. All trademarks, logos, and brand names belong to their respective owners.</p>
+          </div>
+          <div class="footer-col">
+            <h3 class="mono-label eyebrow-gold">Contact Us</h3>
+            <div class="footer-links">
+              <a href="#Email">Email: Celestiapassage@testing.com</a>
+              <a href="#Contact">Contact No: +69 1234 5678</a>
+              <a href="#Address">Address: 123 Celestia Passage, Mondstadt</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3 class="mono-label eyebrow-gold">Keep wandering</h3>
+            <div class="footer-links">
+              <a href="#top">Back to top</a>
+              <a href="#package">Tour Package</a>
+              <a href="#Districts">District Notes</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 / A fan-made tribute to Teyvat</span>
+          <span>Built for school purposes only</span>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
